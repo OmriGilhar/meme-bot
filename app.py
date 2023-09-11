@@ -7,10 +7,10 @@ from github import Github, GithubIntegration
 
 app = Flask(__name__)
 # MAKE SURE TO CHANGE TO YOUR APP NUMBER!!!!!
-app_id = '<Your_App_Number_here>'
+app_id = '388240'
 # Read the bot certificate
 with open(
-        os.path.normpath(os.path.expanduser('~/.certs/github/bot_key.pem')),
+        os.path.normpath(os.path.expanduser('./meme-bot-test.pem')),
         'r'
 ) as cert_file:
     app_key = cert_file.read()
